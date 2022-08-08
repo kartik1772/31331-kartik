@@ -5,9 +5,9 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.get("/", (req, res) => res.send("welcome to  vcvcv the api"));
+app.get("/", (req, res) => res.send("welcome to the api"));
 
-app.post("/solve", (req, res) => {
+app.post("/challenge", (req, res) => {
   try {
     let arr = req.body.array;
 
