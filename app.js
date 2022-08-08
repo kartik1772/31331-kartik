@@ -45,6 +45,6 @@ app.post("/solve", (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log("Server is up and runign on port " + 3000);
+app.listen(process.env.PORT || 3000, () => {
+  console.log("Server is up and runign on port " + process.env.PORT || 3000);
 });
